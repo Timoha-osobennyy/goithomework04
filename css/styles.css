@@ -91,9 +91,7 @@ font-style: normal;
      min-width: 169px;
      height: 56px;
      border: none;
-   
-    
-}
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .about {
     padding: 120px 0;
@@ -137,6 +135,7 @@ font-size: 16px;
     font-style: normal;
     padding: 24px 0 24px;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -167,6 +166,17 @@ font-size: 16px;
     padding: 24px 0 24px;
      display: block;
 }
+.nav-item-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+}
+    
 .nav-focus:hover,
 .nav-focus:focus {
     color: #404bbf;
