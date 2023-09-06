@@ -505,6 +505,11 @@ padding-right: 15px;
     background-color: #2E2F42;
     padding: 100px 0;
 }
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo {
 
  display: block;
